@@ -1,9 +1,5 @@
 # 学习笔记
 
-## Windows安装映像文件
-
-
-
 ## WinSxS文件夹
 
 ### 查看WinSxS文件夹的真实大小
@@ -465,6 +461,49 @@ systeminfo | findstr Build
 
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 
+## 使用命令行工具创建 Windows 映像
 
+### DISM 可用于装载和维护 Windows 映像。
+
+以下是你可以使用 DISM 执行的一些操作：
+
+    装载脱机映像
+    将驱动程序添加到脱机映像
+    启用或禁用 Windows 功能
+    添加或删除程序包
+    添加语言包
+    添加通用 Windows 应用
+    升级 Windows 版本
+
+### Sysprep 准备 Windows 安装用于映像处理，并且允许你捕获自定义安装。
+
+以下是你可以使用 Sysprep 执行的一些操作：
+
+    一般化 Windows 安装
+    自定义默认用户配置文件
+    使用应答文件
+
+### Windows PE (WinPE) 是用于启动无操作系统的计算机的小型操作系统。 可以启动到 Windows PE，然后安装新的操作系统、恢复数据，或修复现有的操作系统。
+
+以下是你可以创建 WinPE 映像的方法：
+
+    创建可启动 USB 驱动器
+    创建启动 CD、DVD、ISO 或 VHD
+
+### Windows 恢复环境 (Windows RE) 是一个能修复常见操作系统问题的恢复环境。
+
+以下是你可以使用 Windows RE 执行的一些操作：
+
+    自定义 Windows RE
+    一键重置
+
+### Windows 系统映像管理器 (Windows SIM) 可帮助你创建在安装过程中更改 Windows 设置和运行脚本的应答文件。
+
+以下是你可以使用 Windows SIM 执行的一些操作：
+
+    创建应答文件
+    将驱动程序路径添加到应答文件
+    将程序包添加到应答文件
+    将自定义命令添加到应答文件
 
 
